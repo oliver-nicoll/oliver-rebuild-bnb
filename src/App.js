@@ -1,14 +1,30 @@
 import './App.css';
+import Home from './Components/Home/Home';
+import Header from './Components/Header/Header'
 
 function App() {
-  
   
   return (
 
     //BEM
-    
+
     <div className="App">
-      <h1>Oliver Rebuild-bnb</h1>
+      <Header />
+      <Home />
+      {/* Home */}
+
+        {/* Header */}
+
+        {/* Banner */}
+
+        {/* Cards */}
+
+        {/* Footer */}
+
+      {/* SearchPage */}
+        {/* ... */}
+
+
     </div>
   );
 }
