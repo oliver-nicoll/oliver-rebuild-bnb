@@ -16,3 +16,36 @@
     left: 0;
     top: 380px;
 }
+
+.search__date > input {
+    width: 539px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 420px;
+    border: none;
+  }
+
+.search__date > input:focus {
+    outline-width: 0;
+}
+
+.search__date > input:focus {
+    outline-width: 0;
+}
+
+.search__date > button {
+    position: absolute;
+    left: 0;
+    top: 480px;
+    text-transform: inherit !important;
+    background-color: #ff7779;
+    color: white;
+    width: 579px;
+  }
+
+.search__date > button:hover {
+    background-color: white;
+    color: #ff7779;
+}
