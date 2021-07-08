@@ -18,7 +18,7 @@ function Banner() {
                 {showSearch && <SearchDate />}
                 <Button onClick={handleClick}
                 className="banner__searchButton"
-                variant='outlined'>Search Dates</Button>
+                variant='outlined'>{showSearch ? "Hide" : "Search Dates"}</Button>
             </div>
             <div className="banner__info">
                 <h1>Get out and stretch your imagination</h1>
