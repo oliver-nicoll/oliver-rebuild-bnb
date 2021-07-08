@@ -22,15 +22,14 @@ function SearchDate() {
         setEndDate(ranges.selection.endDate);
     }
 
+
     return (
         <div className="search__date">
             <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
             <h2>Number of guests:
                 <PeopleIcon />
             </h2>
-            <input min={0}
-            defaultValue={2}
-            type="number"/>
+            <input min={0} defaultValue={2} type="number" />
             <Button>Search Airbnb</Button>
         </div>
     )
