@@ -7,6 +7,7 @@ function Home() {
         <div className="Home">
             {/* Home Component */}
             <Banner />
+            {/* cards */}
         </div>
     )
 }
