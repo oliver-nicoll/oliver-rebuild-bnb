@@ -2,6 +2,9 @@ import './App.css';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
+import SearchPage from './Components/SearchPage/SearchPage';
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 function App() {
   
@@ -10,23 +13,21 @@ function App() {
     //BEM
 
     <div className="App">
-      <Header />
-      <Home />
-      <Footer />
-      {/* Home */}
-
-        {/* Header */}
-
-        {/* Banner */}
-
-        {/* Cards */}
-
-        {/* Footer */}
-
-      {/* SearchPage */}
-        {/* ... */}
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/search">
+            <SearchPage />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
 
+        </Switch>
+
+        <Footer />
+      </ Router>
     </div>
   );
 }
